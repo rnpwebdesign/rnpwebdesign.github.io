@@ -1,0 +1,181 @@
+body{
+	overflow-x: hidden;
+	background-attachment: fixed;
+}
+/* cargador de página */
+.preload{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #333;
+	padding-top: 20%;
+}
+.loaderframe{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	position: relative;
+}
+.loader1, .loader2{
+	position: absolute;
+	border: 10px solid transparent;
+	border-radius: 50px;
+}
+.loader1{
+	width: 100px;
+	height: 100px;
+	border-top: 10px solid #9A8AC1;
+	border-bottom: 10px solid #9A8AC1;
+	animation: clockwisespin 2s linear 3;
+}
+.loader2{
+	width: 80px;
+	height: 80px;
+	border-left: 10px solid #8C54A1;
+	border-right: 10px solid #8C54A1;
+	top: 10px; left: 10px;
+	animation: counterclockwisespin 2s linear 3;
+}
+@keyframes clockwisespin{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@keyframes counterclockwisespin{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(-360deg);}
+}
+/* estilo de botones */
+.btn{
+	background-color: #9A8AC1 !important;
+	border: 0px !important; 
+}
+.btn:hover{
+	background-color: #8C54A1 !important
+}
+ /* footer estilos */
+#contactoheader{
+	min-height: 3em;
+	background-color: black;
+}
+/* navbar styles */
+#navbar{
+	position: absolute !important;
+	background-color: white!important;
+	border-bottom-color: grey;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+/* link styles */
+.nav-link, .link{
+	font-style: none;
+	color: black;
+	font-family: Staatliches, sans-serif;
+	font-size: 3vh;
+}
+.nav-link:hover, .link:hover{
+	font-style: none;
+	color: black;
+}
+
+/* text */
+@media  screen and (min-width: 768px){
+
+}
+/*  */
+@media screen and (min-width: 350px) and (max-width: 768px){
+
+}
+/* contacto styles */
+#form{
+	width: 100%;
+}
+.buttoncontact{
+	margin: auto;
+	display: block;
+	height: 6vw;
+	width: 6vw;
+}
+#pagelink{
+	font-style: none;
+	color: black;
+}
+#pagelink:hover{
+	font-style: none;
+	color: black;
+	text-decoration: none;
+}
+/*boton que dirige a principio de pagina */
+#btnup{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 50%;
+	background-color: #8C54A1 !important;
+}
+#btnupimage{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	bottom: 20px;
+	right: 20px
+}
+
+#servicios{
+	background-color: #f7f7f7;
+}
+
+/*#servicios{
+	background-image: url(testfoto.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}*/
+
+/* entrada  */
+#entrada{
+	width: 100%;
+	height: 90vh;
+	background-image: url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#textoentrada{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 20px;
+	box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
+}
+/* navbar btn animation */
+.btn-1:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 3px;
+	transition: all 2s ease;
+} 
+.btn-1:hover:before {
+	width: 100%;
+}
+/* sm */
+@media screen and (max-width: 768px){
+#entrada{
+	width: 100%;
+	height: 90vh;
+	background-color: #EDEDED;
+}
+}
+@media screen and (min-width: 574px) and (max-width: 769px){
+.contacttext{
+	font-size: 2vw !important;
+}
+}
