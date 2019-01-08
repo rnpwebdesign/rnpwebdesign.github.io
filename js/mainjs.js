@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 $("#navbar").hide();
 $("#wrapper").hide();
+$('#btnup').hide();
 
 //cargador de página
 (function() {
@@ -66,7 +67,11 @@ $(function($){
 });
 //parallax
 $(window).scroll(function() {
-	if (true) {}
+	if ($(window).scrollTop() > $('#acercadenosotros').offset().top) {
+		$('#btnup').fadeIn()
+	}else{
+		$('#btnup').hide()
+	}
 });
 //end document ready function
 });
