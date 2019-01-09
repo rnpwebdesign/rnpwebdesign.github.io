@@ -114,42 +114,27 @@
 						</div>
 						<input type="text" name="nombre" id="nombre" class="form-control" placeholder="John Doe" required>
 					</div>
+
 					<div class="input-group mb-4">
 						<div class="input-group-prepend">
 	   						<span class="input-group-text" id="basic-addon1">Email</span>
 						</div>
 						<input type="email" name="email" id="email" class="form-control" placeholder="email@ejemplo.com" required>
 					</div>
+
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
-							<label class="input-group-text" for="inputGroupSelect01">País</label>
+							<span class="input-group-text" id="basic-addon1">Pais</span>
 						</div>
-						<select type="pais" name="pais" id="pais" class="custom-select" id="inputGroupSelect01">
-						<option selected>Elegir</option>
-						<option value="1">Bolivia</option>
-						<option value="2">Chile</option>
-						<option value="3">Costa Rica</option>
-						<option value="4">Ecuador</option>
-						<option value="5">El Salvador</option>
-						<option value="6">España</option>
-						<option value="7">Guatemala</option>
-						<option value="8">Haití</option>
-						<option value="9">Honduras</option>
-						<option value="10">Mexico</option>
-						<option value="11">Nicaragua</option>
-						<option value="12">Panamá</option>
-						<option value="13">Perú</option>
-						<option value="14">República Dominicana</option>
-						<option value="15">Uruguay</option>
-						<option value="16">Venezuela</option>
-						</select>
+						<input type="pais" name="pais" id="pais" class="form-control" required>
 					</div>
+
 					<label><p class="m-0" style="font-family: 'Open Sans', sans-serif; font-size: 3vh;">Ideas para tu página o preguntas</p></label>
 					<div class="input-group mb-2">
 							<textarea placeholder="Déjame tu mensaje aquí" class="form-control mb-3" id="textarea" rows="5" required></textarea>
 					</div>
-					<span class="formresponse"></span>
 					<input class="btn btn-primary mr-3" type="submit" value="Enviar"> <!-- send -->
+					<span class="formresponse"></span>
 				</form>	
 					</div>
 					<div class="col-md-6 justify-content-center justify-content-md-start d-flex" id="redescontacto">
