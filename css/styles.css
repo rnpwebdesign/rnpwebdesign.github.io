@@ -78,14 +78,7 @@ body{
 .nav-link{
 	font-family: Staatliches, sans-serif;
 }
-/* window > md */
-@media  screen and (min-width: 768px){
-#redescontacto{
-	border-left-width: 2px;
-	border-left-style: solid;
-	border-left-color: lightgrey
-}
-}
+
 /* contacto styles */
 #form{
 	width: 100%;
@@ -143,7 +136,7 @@ body{
 	box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
 }
 /* navbar btn animation */
-.btn-1:before {
+/*.btn-1:before {
 	content:'';
 	position: absolute;
 	top: 0px;
@@ -156,8 +149,16 @@ body{
 } 
 .btn-1:hover:before {
 	width: 100%;
+}*/
+/* window > md */
+@media  screen and (min-width: 768px){
+#redescontacto{
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: lightgrey
 }
-/* sm */
+}
+/* window < sm */
 @media screen and (max-width: 768px){
 .nav-link{
 	font-size: 0.9em;
