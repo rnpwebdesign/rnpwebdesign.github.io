@@ -40,30 +40,7 @@ $('#btnup').click(function(){
 //
 
 //enviar mail
-$(function($){
-		$("#form").submit(function(event){
-			event.preventDefault();
-				$.ajax({
-			    url: "https://formspree.io/ramironietopalacio@gmail.com", 
-			    method: "POST",
-			    data: {
-			    	nombre: $("#nombre").val(),
-			    	email: $("#email").val(),
-			    	pais: $("#pais").val(),
-			    	mensaje: $("#textarea").val(),
-				},
-			    dataType: "json"
-				}).done(function(){
-					$("#nombre").val("");
-			    	$("#email").val("");
-			    	$("#pais").val("")
-			    	$("#textarea").val("");
-					$(".formresponse").addClass("text-success").text("Mensaje enviado con éxito")					
-				}).fail(function(){
-					$(".formresponse").addClass("text-danger").text("Hubo un error en el envío de tu mensaje")
-				});
-		});
-});
+
 //parallax
 $(window).scroll(function() {
 	if ($(window).scrollTop() > $('#acercadenosotros').offset().top) {
