@@ -37,10 +37,6 @@ ScrollLink.click(function(e) {
 $('#btnup').click(function(){
 	$('body,html').animate({scrollTop: 0},)
 });
-//
-
-//enviar mail
-
 //parallax
 $(window).scroll(function() {
 	if ($(window).scrollTop() > $('#acercadenosotros').offset().top) {
